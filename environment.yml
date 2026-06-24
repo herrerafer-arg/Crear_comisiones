@@ -5,9 +5,9 @@ channels:
 dependencies:
   - python=3.14.2
   - pip
+  - streamlit
+  - pandas
+  - xlrd
+  - openpyxl
   - pip:
-      - streamlit==1.58.0
-      - pandas==2.3.3
-      - styleframe==3.0.1
-      - xlrd==2.0.2
-      - openpyxl==3.1.5
+      - styleframe
