@@ -1,13 +1,17 @@
 name: FBCB_env
 channels:
   - conda-forge
+  - defaults
 dependencies:
+  - python=3.11
   - pandas=2.3.3
-  - pip=25.3
-  - python=3.14.2
   - xlrd=2.0.2
+  - numpy=2.3.5
+  - matplotlib=3.10.8
+  - openpyxl=3.1.5
+  - pip
   - pip:
-    - colour==0.1.5
-    - et_xmlfile==2.0.0
-    - openpyxl==3.1.5
-    - styleframe==4.2
+      - colour==0.1.5
+      - et_xmlfile==2.0.0
+      - styleframe==4.2
+      - streamlit==1.58.0
