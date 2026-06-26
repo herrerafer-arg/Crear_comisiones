@@ -60,7 +60,7 @@ for mat in st.session_state["lista_materias"]:
             activar_limite = st.checkbox(f"Definir alumnos máximos por comisión ({mat})", key=f"chk_limit_{mat}", disabled=(st.session_state["resultados_procesamiento"] is not None))
             
             if activar_limite:
-                max_alumnos = st.number_input(f"Máximo de alumnos por comisión ({mat}):", min_value=1, value=30, key=f"max_al_{mat}", disabled=(st.session_state["resultados_procesamiento"] is not None))
+                max_alumnos = st.number_input(f"Máximo de alumnos por comisión ({mat}):", min_value=1, value=20, key=f"max_al_{mat}", disabled=(st.session_state["resultados_procesamiento"] is not None))
             else:
                 max_alumnos = None
                 
