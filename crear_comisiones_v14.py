@@ -19,6 +19,8 @@ def procesar_comisiones(materias_info, uploaded_files, df_forzados=None):
     Algoritmo balanceado con soporte para números secuenciales de comisión, 
     límites opcionales por aula y desborde a listas de espera independientes por materia.
     """
+    random.seed(22)
+    
     comisiones_forzadas = {}
     if df_forzados is not None:
         for _, r in df_forzados.iterrows():
